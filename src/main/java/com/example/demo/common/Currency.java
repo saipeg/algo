@@ -1,8 +1,6 @@
 package com.example.demo.common;
 
-import java.util.Currency;
-
-public enum Сurrency {
+public enum Currency {
     USD("Доллар", "$", 840),
     EUR("Евро", "€", 840),
     RUB("Рубль", "₽", 840);
@@ -11,7 +9,7 @@ public enum Сurrency {
     private final String symbol;
     private final int code;
 
-    Сurrency(String name, String symbol, int code) {
+    Currency(String name, String symbol, int code) {
         this.name = name;
         this.symbol = symbol;
         this.code = code;
