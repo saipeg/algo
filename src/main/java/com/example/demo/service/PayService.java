@@ -1,7 +1,19 @@
 package com.example.demo.service;
 
-public class PayService {
+import com.example.demo.common.Currency;
+import org.springframework.stereotype.Service;
 
-    public PayService() {
+@Service
+public class PayService {
+    public double exchangeToDollar(Currency currency, int amount) {
+        int code = currency.getCode();
+        double indexForCode = getIndexForCode(code);
+
+        return amount * indexForCode;
+
+    }
+
+    private double getIndexForCode(final int code) {
+        return 1.3;
     }
 }
