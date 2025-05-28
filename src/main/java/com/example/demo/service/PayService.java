@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PayService {
+    Currency currency;
     public double exchangeToDollar(Currency currency, int amount) {
         int code = currency.getCode();
         double indexForCode = getIndexForCode(code);

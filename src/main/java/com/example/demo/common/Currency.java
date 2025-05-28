@@ -1,7 +1,5 @@
 package com.example.demo.common;
 
-import org.springframework.stereotype.Component;
-
 public enum Currency {
     USD("Доллар", "$", 840),
     EUR("Евро", "€", 840),
