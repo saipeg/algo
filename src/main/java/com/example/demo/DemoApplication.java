@@ -25,7 +25,7 @@ public class DemoApplication {
     }
 
     static List<Person> getTopAgeForName(List<Person> persons) {
-        Map<String, Person> maxAgePerName = new HashMap<>();
+        Map<String, Integer> maxAgePerName = new HashMap<>();
 
         for (Person person : persons) {
             String currentName = person.getName();
