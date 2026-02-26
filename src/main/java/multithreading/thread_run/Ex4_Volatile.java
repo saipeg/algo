@@ -1,6 +1,6 @@
 package multithreading.thread_run;
 
-public class Ex_Volatile extends Thread {
+public class Ex4_Volatile extends Thread {
     volatile boolean b = true; // без volatile луп не закончится так как переменная кешируется
 
     public void run() {
@@ -12,7 +12,7 @@ public class Ex_Volatile extends Thread {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Ex_Volatile exVolatile = new Ex_Volatile();
+        Ex4_Volatile exVolatile = new Ex4_Volatile();
         exVolatile.start();
         Thread.sleep(3000);
         System.out.println("Afret 3 sec time to wake up!");
