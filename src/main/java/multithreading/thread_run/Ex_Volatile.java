@@ -1,7 +1,7 @@
 package multithreading.thread_run;
 
 public class Ex_Volatile extends Thread {
-    volatile boolean b = true;
+    volatile boolean b = true; // без volatile луп не закончится так как переменная кешируется
 
     public void run() {
         long counter = 0;
