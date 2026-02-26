@@ -1,6 +1,6 @@
 package multithreading.thread_run;
 
-public class Ex_for {
+public class Ex3_for {
 
     public static void main(String[] args) throws InterruptedException {
         Th1 th1 = new Th1();

@@ -1,6 +1,6 @@
 package multithreading.thread_run;
 
-public class Ex_runnable {
+public class Ex1_runnable {
     public static void main(String[] args) {
         Thread thr1 = new Thread(new MyThread());
         thr1.start();
